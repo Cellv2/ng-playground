@@ -531,4 +531,10 @@
 
 
 
-<router-outlet></router-outlet>
+<router-outlet>
+    <nav>
+        <a class="button" [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive="activebutton">Home</a> |
+        <a class="button" routerLink="/random-page" routerLinkActive="activebutton">Random</a> |
+        <a class="button" routerLink="/json-placeholder" routerLinkActive="activebutton">JSON</a>
+      </nav>
+</router-outlet>
